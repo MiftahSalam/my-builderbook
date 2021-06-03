@@ -20,8 +20,7 @@ const { stripeCheckoutCallback } = require('./stripe')
 require('dotenv').config()
 
 const dev = process.env.NODE_ENV !== 'production'
-const MONGO_URL = process.env.MONGO_URL_TEST
-
+const MONGO_URL = dev ? process.env.MONGO_URL_TEST : process.env.MONGO_URL;
 const options = {
     useNewUrlParser: true,
     useCreateIndex: true,
