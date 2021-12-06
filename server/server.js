@@ -33,27 +33,29 @@ mongoose
   .then(() => {
       console.log('Connected to mongo uri',MONGO_URL)
       
-    //   const new_user = new User({
-    //     googleId: 'newgId870328442411-ppooolbcvdrl6l5thkgmod9chptcckvf.apps.googleusercontent.com',
-    //     googleToken: 'newgtoken_870328442411-ppooolbcvdrl6l5thkgmod9chptcckvf.apps.googleusercontent.com',
-    //     slug: 'team-builder-book1',
-    //     createdAt: Date(),
-    //     email: 'salam.miftah@yahoo.com',
-    //     isAdmin: false,
-    //     displayName: 'ms_tensai',
-    //     avatarUrl: 'htttp://ms_tensai',    
-    //   })
-    //   new_user.save()
-    //   .then(user => {
-    //     console.log('Connected to mongo new user',user)
-    //   })
-    //   .catch((err) => console.log('Caught mongo new user error', err.stack)); // eslint-disable-line no-console
+      /*
+      const new_user = new User({
+        googleId: 'newgId870328442411-ppooolbcvdrl6l5thkgmod9chptcckvf.apps.googleusercontent.com',
+        googleToken: 'newgtoken_870328442411-ppooolbcvdrl6l5thkgmod9chptcckvf.apps.googleusercontent.com',
+        slug: 'team-builder-book1',
+        createdAt: Date(),
+        email: 'salam.miftah@yahoo.com',
+        isAdmin: false,
+        displayName: 'ms_tensai',
+        avatarUrl: 'htttp://ms_tensai',    
+      })
+      new_user.save()
+      .then(user => {
+        console.log('Connected to mongo new user',user)
+      })
+      .catch((err) => console.log('Caught mongo new user error', err.stack)); // eslint-disable-line no-console
 
-    //   User.find()
-    //     .then(user => {
-    //         console.log('Connected to mongo-user',user)
-    //     })
-    //     .catch((err) => console.log('Caught mongo user fetch error', err.stack)); // eslint-disable-line no-console
+      User.find()
+        .then(user => {
+            console.log('Connected to mongo-user',user)
+        })
+        .catch((err) => console.log('Caught mongo user fetch error', err.stack)); // eslint-disable-line no-console
+    */
     }) // eslint-disable-line no-console
   .catch((err) => console.log('Caught mongo error', err.stack)); // eslint-disable-line no-console
 
